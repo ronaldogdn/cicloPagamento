@@ -1,0 +1,66 @@
+###
+GET http://localhost:3000/
+
+### listar todos
+GET http://localhost:3000/ciclo/listar
+
+### requisição com erro
+POST http://localhost:3000/ciclo/cadastrar
+Content-Type: application/json
+
+{
+    "data":"2021-07-24",
+    "creditos":[
+        {
+            "nome":"Salário",
+            "valor" : 1500
+        },
+        {
+            "nome":"Investimento",
+            "valor" : 2500
+        }
+    ],
+    "debitos":[
+        {
+            "nome":"Luz",
+            "valor" : 300,
+            "status":"PAGO"
+        },
+        {
+            "nome":"Água",
+            "valor" : 100,
+            "status":"AGENDADO"
+        }
+    ]
+}
+###
+POST http://localhost:3000/ciclo/cadastrar
+Content-Type: application/json
+
+{
+    "data": "2021-04-01",
+    "creditos":[
+        {
+            "nome":"Salário",
+            "valor" : 1500
+        },
+        {
+            "nome":"Investimento",
+            "valor" : 2500
+        }
+    ],
+    "debitos":[
+        {
+            "nome":"Luz",
+            "valor" : 300,
+            "status":"PAGO"
+        },
+        {
+            "nome":"Água",
+            "valor" : 100,
+            "status":"AGENDADO"
+        }
+    ]
+}
+###
+DELETE  http://localhost:3000/ciclo/excluir/6081da64e11ad000f0738f3e

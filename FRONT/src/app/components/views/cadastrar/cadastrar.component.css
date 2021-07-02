@@ -1,0 +1,57 @@
+mat-card{
+   background-color: antiquewhite;
+   width: max-content;
+}
+mat-card-content{
+    padding: 5px;
+}
+
+.mes{
+    width: 50%;
+    display: block;
+}
+.card{
+    width: 100%;
+}
+
+mat-grid-tile{
+    width: 100%;
+}
+
+.debito-credito{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.credito{
+    flex: 1;
+    margin-right: 5px;
+}
+.debito{
+    flex: 1;
+    margin-left: 8px;
+}
+
+.conteudo-credito{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.conteudo-debito{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+table{
+    margin-top: 16px;
+    width: 100%;
+}
+.mat-button{
+    margin-left: 5px;
+    height: 40px;
+}
+.mat-button:hover{
+    text-decoration: underline;
+}

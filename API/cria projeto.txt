@@ -1,0 +1,19 @@
+npm init -w //gerenciador de pacotes nativo do node -w ignora as perguntas feitas
+bibliotecas d node:
+npm install express -> é o servidor
+npm install typescript --global/-g
+npm install //instala todas as bibliotecas que estão no package.json
+tsc --init // iniciar o projeto para typescript
+npm install @types/express -D //instala as tipagens do typescript -D "dependence" para não subir para o gib
+npm install ts-node-dev (-g) //para transpilar o código para javaScript; instalei de forma local
+	porque com -g o run dev não funciona
+	para rodar: ts-node-dev ./src/server.ts //transpila o código e envia para o node
+	no arquivo package.json:
+	"scripts": {
+	   "dev": "ts-node-dev ./src/server.ts"
+  	},
+	no terminal para executar: npm run dev
+npm install mongoose //biblioteca para manipular query de objetos instalada dentro do projeto
+npm install @types/mongoose -D //somente desenvolvimento
+instalar o cors
+    npm install cors @types/cors
